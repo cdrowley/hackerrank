@@ -1,5 +1,7 @@
 # https://www.hackerrank.com/challenges/class-1-dealing-with-complex-numbers/problem
 
+from math import sqrt
+
 
 class Complex(object):
     def __init__(self, r, i):
@@ -21,7 +23,7 @@ class Complex(object):
         return Complex(c.real, c.imag)
 
     def mod(self):
-        return Complex(math.sqrt(pow(self.r, 2) + pow(self.i, 2)), 0)
+        return Complex(sqrt(pow(self.r, 2) + pow(self.i, 2)), 0)
 
     def __str__(self):
         if self.i == 0:

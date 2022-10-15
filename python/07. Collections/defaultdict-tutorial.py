@@ -2,7 +2,6 @@
 
 from collections import defaultdict
 
-
 n, m = map(int, input().split())
 A = defaultdict(list)
 

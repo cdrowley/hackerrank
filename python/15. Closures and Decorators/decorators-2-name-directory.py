@@ -1,8 +1,8 @@
 # https://www.hackerrank.com/challenges/decorators-2-name-directory/problem
 
 
-def person_lister(f):
+def person_lister(func):
     def inner(people):
-        return [f(person) for person in sorted(people, key=lambda age: int(age[2]))]
+        return [func(person) for person in sorted(people, key=lambda age: int(age[2]))]
 
     return inner
