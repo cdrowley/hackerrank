@@ -11,9 +11,9 @@
  order by earnings desc;
  */
 with workings as (
-    select max(salary * months) over() top_salary,
+    select max(salary * months) over () top_salary,
         case
-            when (salary * months) = max(salary * months) over() then 1
+            when (salary * months) = max(salary * months) over () then 1
             else 0
         END earns_top_salary
     from employee
