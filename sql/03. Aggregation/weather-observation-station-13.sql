@@ -1,6 +1,6 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-13/
 SELECT
-  CAST(SUM(lat_n) AS DECIMAL(10, 4))
+  CAST(SUM(lat_n) AS DECIMAL (10, 4))
 FROM
   station
 WHERE

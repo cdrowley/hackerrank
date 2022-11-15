@@ -1,6 +1,6 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-14/
 SELECT
-  TOP 1 CAST(lat_n AS DECIMAL(10, 4))
+  TOP 1 CAST(lat_n AS DECIMAL (10, 4))
 FROM
   station
 WHERE

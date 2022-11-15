@@ -7,7 +7,7 @@ select distinct
                     lat_n
             ) over ()
           , 4
-        ) as decimal(16, 4)
+        ) as decimal (16, 4)
     )
 from
     station

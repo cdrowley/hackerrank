@@ -1,6 +1,6 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-15/
 SELECT
-  CAST(MAX(long_w) AS DECIMAL(18, 4))
+  CAST(MAX(long_w) AS DECIMAL (18, 4))
 FROM
   station
 WHERE
