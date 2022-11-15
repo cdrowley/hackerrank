@@ -1,9 +1,14 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-6/
-select city
-from station
-where city like 'a%'
-    or city like 'e%'
-    or city like 'i%'
-    or city like 'o%'
-    or city like 'u%'
-group by city;
+SELECT
+  city
+FROM
+  station
+WHERE
+  city LIKE 'a%'
+  OR city LIKE 'e%'
+  OR city LIKE 'i%'
+  OR city LIKE 'o%'
+  OR city LIKE 'u%'
+GROUP BY
+  city
+;

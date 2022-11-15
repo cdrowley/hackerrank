@@ -1,5 +1,8 @@
 -- https://www.hackerrank.com/challenges/more-than-75-marks/
-select distinct city
-from station
-where left(city, 1) not in ('a', 'e', 'i', 'o', 'u')
-    and right(city, 1) not in ('a', 'e', 'i', 'o', 'u')
+SELECT DISTINCT
+  city
+FROM
+  station
+WHERE
+  LEFT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+  AND RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')

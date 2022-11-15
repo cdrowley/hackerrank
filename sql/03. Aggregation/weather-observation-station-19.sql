@@ -1,7 +1,9 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-19/
-select cast(
-        sqrt(
-            square(abs(max(lat_n)) - abs(min(lat_n))) + (square(abs(max(long_w)) - abs(min(long_w))))
-        ) as decimal(10, 4)
-    )
-from station
+SELECT
+  CAST(
+    SQRT(
+      SQUARE(ABS(MAX(lat_n)) - ABS(MIN(lat_n))) + (SQUARE(ABS(MAX(long_w)) - ABS(MIN(long_w))))
+    ) AS DECIMAL(10, 4)
+  )
+FROM
+  station

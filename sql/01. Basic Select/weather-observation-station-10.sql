@@ -1,4 +1,8 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-10/
-select distinct city
-from station
-where right(city, 1) not in ('a', 'e', 'i', 'o', 'u');
+SELECT DISTINCT
+  city
+FROM
+  station
+WHERE
+  RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+;

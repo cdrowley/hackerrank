@@ -1,6 +1,9 @@
 -- https://www.hackerrank.com/challenges/the-blunder/
-select 1 + round(
-        avg(salary) - avg(cast(replace(salary, "0", "") as integer)),
-        0
-    )
-from employees;
+SELECT
+  1 + ROUND(
+    AVG(salary) - AVG(CAST(REPLACE(salary, "0", "") AS INTEGER))
+  , 0
+  )
+FROM
+  employees
+;

@@ -1,12 +1,18 @@
 -- https://www.hackerrank.com/challenges/binary-search-tree-1/
-select N,
-    case
-        when P is null then "Root"
-        when n in (
-            select p
-            from bst
-        ) then "Inner"
-        else "Leaf"
-    end
-from bst
-order by n;
+SELECT
+  N
+, CASE
+    WHEN P IS NULL THEN "Root"
+    WHEN n IN (
+      SELECT
+        p
+      FROM
+        bst
+    ) THEN "Inner"
+    ELSE "Leaf"
+  END
+FROM
+  bst
+ORDER BY
+  n
+;

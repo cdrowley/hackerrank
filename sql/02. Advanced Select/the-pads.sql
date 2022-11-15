@@ -1,18 +1,27 @@
 -- https://www.hackerrank.com/challenges/the-pads/
-with cte as (
-    select occupation,
-        count(left(occupation, 1)) as letter
-    from occupations
-    group by occupation
-)
-select concat(name, "(", left(occupation, 1), ")")
-from occupations
-union
-select concat(
-        "There are a total of ",
-        letter,
-        " ",
-        lower(occupation),
-        "s."
-    )
-from cte;
+WITH
+  cte AS (
+    SELECT
+      occupation
+    , COUNT(LEFT(occupation, 1)) AS letter
+    FROM
+      occupations
+    GROUP BY
+      occupation
+  )
+SELECT
+  CONCAT(name, "(", LEFT(occupation, 1), ")")
+FROM
+  occupations
+UNION
+SELECT
+  CONCAT(
+    "There are a total of "
+  , letter
+  , " "
+  , LOWER(occupation)
+  , "s."
+  )
+FROM
+  cte
+;

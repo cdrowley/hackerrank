@@ -1,8 +1,15 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-15/
-select cast(max(long_w) as decimal (18, 4))
-from station
-where lat_n = (
-        select max(lat_n)
-        from station
-        where lat_n < 137.2345
-    );
+SELECT
+  CAST(MAX(long_w) AS DECIMAL(18, 4))
+FROM
+  station
+WHERE
+  lat_n = (
+    SELECT
+      MAX(lat_n)
+    FROM
+      station
+    WHERE
+      lat_n < 137.2345
+  )
+;

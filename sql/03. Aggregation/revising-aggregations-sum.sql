@@ -1,4 +1,8 @@
 -- https://www.hackerrank.com/challenges/revising-aggregations-sum/
-select sum(population)
-from city
-where district = 'California';
+SELECT
+  SUM(population)
+FROM
+  city
+WHERE
+  district = 'California'
+;

@@ -1,4 +1,8 @@
 -- https://www.hackerrank.com/challenges/japanese-cities-name/
-select name
-from city
-where countrycode = 'JPN';
+SELECT
+  name
+FROM
+  city
+WHERE
+  countrycode = 'JPN'
+;
