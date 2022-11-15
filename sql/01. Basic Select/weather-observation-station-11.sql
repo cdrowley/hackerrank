@@ -4,6 +4,6 @@ SELECT DISTINCT
 FROM
   station
 WHERE
-  LEFT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
-  OR RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+  LEFT (city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+  OR RIGHT (city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
 ;

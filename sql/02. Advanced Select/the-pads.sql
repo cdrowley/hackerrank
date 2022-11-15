@@ -3,19 +3,19 @@ WITH
   cte AS (
     SELECT
       occupation
-    , COUNT(LEFT(occupation, 1)) AS letter
+    , COUNT(LEFT (occupation, 1)) AS letter
     FROM
       occupations
     GROUP BY
       occupation
   )
 SELECT
-  CONCAT(name, "(", LEFT(occupation, 1), ")")
+  CONCAT (name, "(", LEFT (occupation, 1), ")")
 FROM
   occupations
 UNION
 SELECT
-  CONCAT(
+  CONCAT (
     "There are a total of "
   , letter
   , " "

@@ -4,5 +4,5 @@ SELECT DISTINCT
 FROM
   station
 WHERE
-  RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+  RIGHT (city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
 ;

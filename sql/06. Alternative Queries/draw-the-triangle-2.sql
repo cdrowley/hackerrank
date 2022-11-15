@@ -3,3 +3,4 @@ SELECT
   repeat ('* ',)
 FROM
   information_schema.tables
+;

@@ -2,8 +2,9 @@
 SELECT
   CAST(
     SQRT(
-      SQUARE(ABS(MAX(lat_n)) - ABS(MIN(lat_n))) + (SQUARE(ABS(MAX(long_w)) - ABS(MIN(long_w))))
+      SQUARE (ABS(MAX(lat_n)) - ABS(MIN(lat_n))) + (SQUARE (ABS(MAX(long_w)) - ABS(MIN(long_w))))
     ) AS DECIMAL(10, 4)
   )
 FROM
   station
+;
