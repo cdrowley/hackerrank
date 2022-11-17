@@ -1,9 +1,9 @@
 -- https://www.hackerrank.com/challenges/african-cities/
 SELECT
-    CITY.NAME
+    city.name
 FROM
-    CITY
-    JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+    city
+    JOIN country ON city.countrycode = country.code
 WHERE
-    CONTINENT = 'Africa'
+    continent = 'Africa'
 ;

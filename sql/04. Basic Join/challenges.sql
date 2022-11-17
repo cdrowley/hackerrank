@@ -5,7 +5,7 @@ WITH
             c.hacker_id
           , MAX(h.name) AS name
           , COUNT(*) AS challenges_created
-          , MAX(count(c.hacker_id)) over () AS max_challenges
+          , MAX(COUNT(c.hacker_id)) over () AS max_challenges
           , ROW_NUMBER() OVER (
                 PARTITION BY
                     COUNT(c.hacker_id)

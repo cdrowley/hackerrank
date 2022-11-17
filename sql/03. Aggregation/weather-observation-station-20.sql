@@ -1,14 +1,14 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-20/
-select distinct
-    cast(
-        round(
-            percentile_disc(0.5) within group (
-                order by
+SELECT DISTINCT
+    CAST(
+        ROUND(
+            PERCENTILE_DISC(0.5) within GROUP (
+                ORDER BY
                     lat_n
             ) over ()
           , 4
-        ) as decimal (16, 4)
+        ) AS decimal (16, 4)
     )
-from
+FROM
     station
 ;
