@@ -1,22 +1,21 @@
 -- https://www.hackerrank.com/challenges/what-type-of-triangle/
-SELECT
-  CASE
+SELECT CASE
     WHEN (
       a + b <= c
       OR a + c <= b
       OR b + c <= a
-    ) THEN "Not A Triangle"
+    ) THEN 'Not A Triangle'
     WHEN (
       a = b
       AND b = c
-    ) THEN "Equilateral"
+    ) THEN 'equilateral'
     WHEN (
       a = b
       OR b = c
       OR a = c
-    ) THEN "Isosceles"
-    ELSE "Scalene"
-  END
+    ) THEN 'isosceles'
+    ELSE 'scalene'
+  END AS triangle_type
 FROM
   triangles
 ;

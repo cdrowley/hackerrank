@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/select-by-id/
-SELECT
-  *
+SELECT *
 FROM
   city
 WHERE

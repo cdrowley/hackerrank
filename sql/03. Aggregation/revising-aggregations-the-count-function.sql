@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/
-SELECT
-  COUNT(*)
+SELECT COUNT(*) AS large_cities_cnt
 FROM
   city
 WHERE

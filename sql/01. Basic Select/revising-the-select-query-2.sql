@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/revising-the-select-query-2/
-SELECT
-  name
+SELECT name
 FROM
   city
 WHERE

@@ -1,9 +1,8 @@
 -- https://www.hackerrank.com/challenges/asian-population/
-SELECT
-    SUM(city.population)
+SELECT SUM(c.population) AS population
 FROM
-    city
-    JOIN country ON CITY.countrycode = country.code
+  city c
+INNER JOIN country co ON c.countrycode = co.code
 WHERE
-    country.continent = 'Asia'
+  co.continent = 'Asia'
 ;

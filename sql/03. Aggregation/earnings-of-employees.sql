@@ -11,19 +11,20 @@ from cte
 order by earnings desc;
  */
 WITH
-  workings AS (
-    SELECT
-      MAX(salary * months) OVER () top_salary
+workings AS (
+  SELECT
+    MAX(salary * months) OVER () AS top_salary
     , CASE
-        WHEN (salary * months) = MAX(salary * months) OVER () THEN 1
-        ELSE 0
-      END earns_top_salary
-    FROM
-      employee
-  )
+      WHEN (salary * months) = MAX(salary * months) OVER () THEN 1
+      ELSE 0
+    END AS earns_top_salary
+  FROM
+    employee
+)
+
 SELECT
-  MAX(top_salary)
-, SUM(earns_top_salary)
+  MAX(top_salary) AS top_salary
+  , SUM(earns_top_salary) AS top_salary_cost
 FROM
   workings
 ;

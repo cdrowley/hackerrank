@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/weather-observation-station-6/
-SELECT
-  city
+SELECT city
 FROM
   station
 WHERE

@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/japanese-cities-attributes/
-SELECT
-  *
+SELECT *
 FROM
   city
 WHERE

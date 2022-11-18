@@ -1,10 +1,10 @@
 -- https://www.hackerrank.com/challenges/average-population-of-each-continent/
 SELECT
-    country.continent
-  , FLOOR(AVG(city.population))
+  co.continent
+  , FLOOR(AVG(c.population)) AS average_population
 FROM
-    city
-    INNER JOIN country ON city.countrycode = country.code
+  city c
+INNER JOIN country co ON c.countrycode = co.code
 GROUP BY
-    country.continent
+  co.continent
 ;

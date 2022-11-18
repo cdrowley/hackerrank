@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/salary-of-employees/
-SELECT
-  name
+SELECT name
 FROM
   employee
 WHERE

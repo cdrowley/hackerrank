@@ -1,6 +1,5 @@
 -- https://www.hackerrank.com/challenges/name-of-employees/
-SELECT
-  name
+SELECT name
 FROM
   employee
 ORDER BY
