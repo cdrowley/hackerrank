@@ -128,7 +128,8 @@ fully_qualify_join_types = inner
 [sqlfluff:rules:L052]
 # Semi-colon formatting approach
 multiline_newline = True
-require_final_semicolon = False # Disabled for now as causing issues with tsql
+# Disabled for now as causing issues with tsql
+require_final_semicolon = False 
 
 [sqlfluff:rules:L057]
 # Special characters in identifiers

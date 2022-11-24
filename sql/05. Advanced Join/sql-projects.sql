@@ -1,3 +1,4 @@
+-- -- https://www.hackerrank.com/challenges/sql-projects
 WITH
 project_start_date_groups AS (
   SELECT
